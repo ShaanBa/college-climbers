@@ -1,5 +1,3 @@
-import { query } from "express";
-
 // I am going to comment my thoughts of what i think everything is 
 export async function GET(request) { // i assume we are sending (exporting) a function an async (not sure what that means)function which will get a request(not sure from where)
     const query = new URL(request.url).searchParams.get('name'); // then create a not changing variable called query which is new? then get a url of the request and look up the name maybe
